@@ -29,259 +29,279 @@ namespace sw_calculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.tboxResult = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDivision = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.btnMulti = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
+            this.btnPM = new System.Windows.Forms.Button();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.btnPoint = new System.Windows.Forms.Button();
+            this.btnResult = new System.Windows.Forms.Button();
+            this.btnRemainder = new System.Windows.Forms.Button();
+            this.tboxProcess = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tboxResult
             // 
-            this.textBox1.Font = new System.Drawing.Font("페이북 OTF Bold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(30, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 48);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tboxResult.Font = new System.Drawing.Font("페이북 OTF Bold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tboxResult.Location = new System.Drawing.Point(30, 66);
+            this.tboxResult.Name = "tboxResult";
+            this.tboxResult.Size = new System.Drawing.Size(314, 48);
+            this.tboxResult.TabIndex = 0;
+            this.tboxResult.Text = "0";
+            this.tboxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button1
+            // btnClear
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(30, 92);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 57);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "C";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClear.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnClear.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClear.Location = new System.Drawing.Point(30, 132);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(154, 57);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "C";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // button4
+            // btnDivision
             // 
-            this.button4.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button4.Location = new System.Drawing.Point(270, 92);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(74, 57);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "÷";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDivision.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnDivision.Location = new System.Drawing.Point(270, 132);
+            this.btnDivision.Name = "btnDivision";
+            this.btnDivision.Size = new System.Drawing.Size(74, 57);
+            this.btnDivision.TabIndex = 1;
+            this.btnDivision.Text = "÷";
+            this.btnDivision.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn7
             // 
-            this.button5.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button5.Location = new System.Drawing.Point(30, 155);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(74, 57);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "7";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn7.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn7.Location = new System.Drawing.Point(30, 195);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(74, 57);
+            this.btn7.TabIndex = 1;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button6
+            // btn8
             // 
-            this.button6.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button6.Location = new System.Drawing.Point(110, 155);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(74, 57);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "8";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btn8.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn8.Location = new System.Drawing.Point(110, 195);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(74, 57);
+            this.btn8.TabIndex = 1;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button7
+            // btn9
             // 
-            this.button7.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button7.Location = new System.Drawing.Point(190, 155);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(74, 57);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "9";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn9.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn9.Location = new System.Drawing.Point(190, 195);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(74, 57);
+            this.btn9.TabIndex = 1;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button8
+            // btnMulti
             // 
-            this.button8.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button8.Location = new System.Drawing.Point(270, 155);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(74, 57);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "×";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnMulti.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnMulti.Location = new System.Drawing.Point(270, 195);
+            this.btnMulti.Name = "btnMulti";
+            this.btnMulti.Size = new System.Drawing.Size(74, 57);
+            this.btnMulti.TabIndex = 1;
+            this.btnMulti.Text = "×";
+            this.btnMulti.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btn4
             // 
-            this.button9.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button9.Location = new System.Drawing.Point(30, 218);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(74, 57);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "4";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn4.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn4.Location = new System.Drawing.Point(30, 258);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(74, 57);
+            this.btn4.TabIndex = 1;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button10
+            // btn5
             // 
-            this.button10.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button10.Location = new System.Drawing.Point(110, 218);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(74, 57);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "5";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btn5.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn5.Location = new System.Drawing.Point(110, 258);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(74, 57);
+            this.btn5.TabIndex = 1;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button11
+            // btn6
             // 
-            this.button11.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button11.Location = new System.Drawing.Point(190, 218);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(74, 57);
-            this.button11.TabIndex = 1;
-            this.button11.Text = "6";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btn6.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn6.Location = new System.Drawing.Point(190, 258);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(74, 57);
+            this.btn6.TabIndex = 1;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button12
+            // btnMinus
             // 
-            this.button12.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button12.Location = new System.Drawing.Point(270, 218);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(74, 57);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "-";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnMinus.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnMinus.Location = new System.Drawing.Point(270, 258);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(74, 57);
+            this.btnMinus.TabIndex = 1;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btn1
             // 
-            this.button13.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button13.Location = new System.Drawing.Point(30, 281);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(74, 57);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "1";
-            this.button13.UseVisualStyleBackColor = true;
+            this.btn1.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn1.Location = new System.Drawing.Point(30, 321);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(74, 57);
+            this.btn1.TabIndex = 1;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button14
+            // btn2
             // 
-            this.button14.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button14.Location = new System.Drawing.Point(110, 281);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(74, 57);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "2";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btn2.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn2.Location = new System.Drawing.Point(110, 321);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(74, 57);
+            this.btn2.TabIndex = 1;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button15
+            // btn3
             // 
-            this.button15.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button15.Location = new System.Drawing.Point(190, 281);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(74, 57);
-            this.button15.TabIndex = 1;
-            this.button15.Text = "3";
-            this.button15.UseVisualStyleBackColor = true;
+            this.btn3.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn3.Location = new System.Drawing.Point(190, 321);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(74, 57);
+            this.btn3.TabIndex = 1;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button16
+            // btnPlus
             // 
-            this.button16.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button16.Location = new System.Drawing.Point(270, 281);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(74, 57);
-            this.button16.TabIndex = 1;
-            this.button16.Text = "+";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnPlus.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPlus.Location = new System.Drawing.Point(270, 321);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(74, 57);
+            this.btnPlus.TabIndex = 1;
+            this.btnPlus.Text = "+";
+            this.btnPlus.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // btnPM
             // 
-            this.button17.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button17.Location = new System.Drawing.Point(30, 344);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(74, 57);
-            this.button17.TabIndex = 1;
-            this.button17.Text = "+/-";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnPM.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPM.Location = new System.Drawing.Point(30, 384);
+            this.btnPM.Name = "btnPM";
+            this.btnPM.Size = new System.Drawing.Size(74, 57);
+            this.btnPM.TabIndex = 1;
+            this.btnPM.Text = "+/-";
+            this.btnPM.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // btn0
             // 
-            this.button18.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button18.Location = new System.Drawing.Point(110, 344);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(74, 57);
-            this.button18.TabIndex = 1;
-            this.button18.Text = "0";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.btn0.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn0.Location = new System.Drawing.Point(110, 384);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(74, 57);
+            this.btn0.TabIndex = 1;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.NumButton_click);
             // 
-            // button19
+            // btnPoint
             // 
-            this.button19.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button19.Location = new System.Drawing.Point(190, 344);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(74, 57);
-            this.button19.TabIndex = 1;
-            this.button19.Text = ".";
-            this.button19.UseVisualStyleBackColor = true;
+            this.btnPoint.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPoint.Location = new System.Drawing.Point(190, 384);
+            this.btnPoint.Name = "btnPoint";
+            this.btnPoint.Size = new System.Drawing.Size(74, 57);
+            this.btnPoint.TabIndex = 1;
+            this.btnPoint.Text = ".";
+            this.btnPoint.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // btnResult
             // 
-            this.button20.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button20.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button20.Location = new System.Drawing.Point(270, 344);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(74, 57);
-            this.button20.TabIndex = 1;
-            this.button20.Text = "=";
-            this.button20.UseVisualStyleBackColor = false;
+            this.btnResult.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnResult.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnResult.Location = new System.Drawing.Point(270, 384);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(74, 57);
+            this.btnResult.TabIndex = 1;
+            this.btnResult.Text = "=";
+            this.btnResult.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnRemainder
             // 
-            this.button2.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.Location = new System.Drawing.Point(190, 92);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 57);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "%";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRemainder.Font = new System.Drawing.Font("페이북 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnRemainder.Location = new System.Drawing.Point(190, 132);
+            this.btnRemainder.Name = "btnRemainder";
+            this.btnRemainder.Size = new System.Drawing.Size(74, 57);
+            this.btnRemainder.TabIndex = 1;
+            this.btnRemainder.Text = "%";
+            this.btnRemainder.UseVisualStyleBackColor = true;
+            // 
+            // tboxProcess
+            // 
+            this.tboxProcess.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tboxProcess.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxProcess.Font = new System.Drawing.Font("페이북 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tboxProcess.Location = new System.Drawing.Point(30, 28);
+            this.tboxProcess.Name = "tboxProcess";
+            this.tboxProcess.Size = new System.Drawing.Size(314, 25);
+            this.tboxProcess.TabIndex = 0;
+            this.tboxProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 431);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(380, 478);
+            this.Controls.Add(this.btnResult);
+            this.Controls.Add(this.btnPlus);
+            this.Controls.Add(this.btnMinus);
+            this.Controls.Add(this.btnMulti);
+            this.Controls.Add(this.btnRemainder);
+            this.Controls.Add(this.btnDivision);
+            this.Controls.Add(this.btnPoint);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btn6);
+            this.Controls.Add(this.btn9);
+            this.Controls.Add(this.btn0);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btn5);
+            this.Controls.Add(this.btn8);
+            this.Controls.Add(this.btnPM);
+            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.btn4);
+            this.Controls.Add(this.btn7);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.tboxProcess);
+            this.Controls.Add(this.tboxResult);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -291,26 +311,27 @@ namespace sw_calculator
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox tboxResult;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnDivision;
+        private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btn9;
+        private System.Windows.Forms.Button btnMulti;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btnMinus;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnPM;
+        private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Button btnPoint;
+        private System.Windows.Forms.Button btnResult;
+        private System.Windows.Forms.Button btnRemainder;
+        private System.Windows.Forms.TextBox tboxProcess;
     }
 }
 
