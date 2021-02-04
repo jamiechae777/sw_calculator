@@ -49,13 +49,13 @@ namespace sw_calculator
             this.btnPoint = new System.Windows.Forms.Button();
             this.btnResult = new System.Windows.Forms.Button();
             this.btnRemainder = new System.Windows.Forms.Button();
-            this.tboxProcess = new System.Windows.Forms.TextBox();
+            this.tboxTemp = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tboxResult
             // 
             this.tboxResult.Font = new System.Drawing.Font("페이북 OTF Bold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tboxResult.Location = new System.Drawing.Point(30, 66);
+            this.tboxResult.Location = new System.Drawing.Point(30, 60);
             this.tboxResult.Name = "tboxResult";
             this.tboxResult.Size = new System.Drawing.Size(314, 48);
             this.tboxResult.TabIndex = 0;
@@ -83,6 +83,7 @@ namespace sw_calculator
             this.btnDivision.TabIndex = 1;
             this.btnDivision.Text = "÷";
             this.btnDivision.UseVisualStyleBackColor = true;
+            this.btnDivision.Click += new System.EventHandler(this.OptButton_click);
             // 
             // btn7
             // 
@@ -126,6 +127,7 @@ namespace sw_calculator
             this.btnMulti.TabIndex = 1;
             this.btnMulti.Text = "×";
             this.btnMulti.UseVisualStyleBackColor = true;
+            this.btnMulti.Click += new System.EventHandler(this.OptButton_click);
             // 
             // btn4
             // 
@@ -169,6 +171,7 @@ namespace sw_calculator
             this.btnMinus.TabIndex = 1;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.OptButton_click);
             // 
             // btn1
             // 
@@ -212,6 +215,7 @@ namespace sw_calculator
             this.btnPlus.TabIndex = 1;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.OptButton_click);
             // 
             // btnPM
             // 
@@ -222,6 +226,7 @@ namespace sw_calculator
             this.btnPM.TabIndex = 1;
             this.btnPM.Text = "+/-";
             this.btnPM.UseVisualStyleBackColor = true;
+            this.btnPM.Click += new System.EventHandler(this.btnPM_Click);
             // 
             // btn0
             // 
@@ -243,6 +248,7 @@ namespace sw_calculator
             this.btnPoint.TabIndex = 1;
             this.btnPoint.Text = ".";
             this.btnPoint.UseVisualStyleBackColor = true;
+            this.btnPoint.Click += new System.EventHandler(this.btnPoint_Click);
             // 
             // btnResult
             // 
@@ -254,6 +260,7 @@ namespace sw_calculator
             this.btnResult.TabIndex = 1;
             this.btnResult.Text = "=";
             this.btnResult.UseVisualStyleBackColor = false;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // btnRemainder
             // 
@@ -264,23 +271,24 @@ namespace sw_calculator
             this.btnRemainder.TabIndex = 1;
             this.btnRemainder.Text = "%";
             this.btnRemainder.UseVisualStyleBackColor = true;
+            this.btnRemainder.Click += new System.EventHandler(this.OptButton_click);
             // 
-            // tboxProcess
+            // tboxTemp
             // 
-            this.tboxProcess.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.tboxProcess.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxProcess.Font = new System.Drawing.Font("페이북 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tboxProcess.Location = new System.Drawing.Point(30, 28);
-            this.tboxProcess.Name = "tboxProcess";
-            this.tboxProcess.Size = new System.Drawing.Size(314, 25);
-            this.tboxProcess.TabIndex = 0;
-            this.tboxProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tboxTemp.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.tboxTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxTemp.Font = new System.Drawing.Font("페이북 Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tboxTemp.Location = new System.Drawing.Point(30, 29);
+            this.tboxTemp.Name = "tboxTemp";
+            this.tboxTemp.Size = new System.Drawing.Size(314, 23);
+            this.tboxTemp.TabIndex = 0;
+            this.tboxTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 478);
+            this.ClientSize = new System.Drawing.Size(376, 478);
             this.Controls.Add(this.btnResult);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btnMinus);
@@ -300,7 +308,7 @@ namespace sw_calculator
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.tboxProcess);
+            this.Controls.Add(this.tboxTemp);
             this.Controls.Add(this.tboxResult);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -331,7 +339,7 @@ namespace sw_calculator
         private System.Windows.Forms.Button btnPoint;
         private System.Windows.Forms.Button btnResult;
         private System.Windows.Forms.Button btnRemainder;
-        private System.Windows.Forms.TextBox tboxProcess;
+        private System.Windows.Forms.TextBox tboxTemp;
     }
 }
 
